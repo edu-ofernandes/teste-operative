@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <title>Reclame aqui</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <button type="menu" class="menu-mobile">Menu<span class="menu-hamburguer"></span></button>
+      <ul class="ul">
+        <li class="search">
+          <input class="search-input" type="search" name="search" id="search" placeholder="Pesquise uma empresa">
+          <img class="searchIcon-link" src="./assets/img/search-icon.svg" alt="">
+        </li>
+        <li class="nacionalRanking"><a href="#">Ranking Nacional</a></li>
+        <li class="login">
+          <a class="login-link" href="#">
+            <img src="./assets/img/user.svg" alt="">
+            Entrar
+          </a>
+        </li>
+      </ul class="item">
+    </nav>
+  </header>
+  <main class="container-banner">
+    <section class="information">
+      <img src="./assets/img/reclame_aqui.jpg" alt="">
+      <h1 class="title">A melhor forma de solução de conflitos dos consumidores</h1>
+    </section>
+    <section class="contactForm">
+      <div class="container-form">
+        <h2 class="form-title">Conte nos o que aconteceu</h2>
+        <button type="button" class="wahtsApp-button-contact">
+          <img src="./assets/img/whatsapp-brands.svg" alt="">
+          Conversar pelo whatsapp
+        </button>
+        <a href="#"></a>
+        <form action="" class="contact">
+          <input class="input input-name" name="name" id="name" placeholder="Nome" required type="text">
+          <input class="input input-email" name="email" id="email" placeholder="E-mail" required type="email">
+          <input class="input input-phone" name="phone" id="phone" placeholder="Telefone" required type="tel">
+          <input class="input input-companyName" name="companyName" id="companyName" placeholder="Nome empresa" required
+            type="text">
+          <input class="input input-date" name="date" id="date" placeholder="Data" required type="date">
+          <textarea class="textArea textArea-description" name="description" id="description"
+            placeholder="Explique para nós" required type="text"></textarea>
+
+          <button type="submit" class="button button-submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+$green1: #94c11f;
+$green2: #056734;
+$green3: #6bcf72;
+$highLightPurple: #696bd3;
+$primaryColor: #e0e0e0;
+$secondaryColor: #9a9a9a;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin flexCenter($justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.header{
+  width: 100%;
+  background-color: rgba(216, 15, 15, 0);
+  position: fixed;
+  
+  .nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-mobile{
+    display: none;
+  }
+  .ul{
+    width: 100%;
+    padding: .3rem;
+    @include flexCenter(space-around, row);
+    list-style: none;
+
+    a{
+      color: $highLightPurple;
+    }
+  }
+  .search{
+    width: 40%;
+    padding: 0.2rem;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: 2px solid $secondaryColor;
+    box-shadow: 2px 2px 5px $secondaryColor;
+    @include flexCenter(center, row);
+    .search-input{
+      width: 70%;
+      border: none;
+      padding: .4rem 1rem;
+      background-color: #ffffff;
+      outline: none;
+    }
+    .searchIcon-link{
+      display: block;
+      padding: .5rem;
+      cursor: pointer;
+    }
+  }
+  .nacionalRanking{
+    padding: .5rem;
+  }
+  .login{
+    .login-link{
+      @include flexCenter(center, row);
+      padding: .5rem;
+    }
+  }
+
+  
+}
+.container-banner{
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('../assets/img/reclame_banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  .information{
+    width: 30%;
+    padding: .5rem;
+    @include flexCenter(center, column);
+    
+    .title{
+      text-transform: uppercase;
+      color: $green2;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+
+  .contactForm{
+    max-width: 50%;
+    box-shadow: 2px 5px 10px $secondaryColor;
+    border-radius: 5px;
+    .container-form{
+      width: 100%;
+      padding: 1rem;
+      @include flexCenter(center, column);
+      background-color: #ffffff;
+      border-radius: 5px;
+
+      .form-title{
+        color: $highLightPurple;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+      .wahtsApp-button-contact{
+        width: 80%;
+        padding:  .5rem 1rem;
+        height: auto;
+        background-color: $green3;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: #ffff;
+        margin-bottom: 1rem;
+        box-shadow: 2px 5px 10px $secondaryColor;
+        @include flexCenter(space-around, row);
+        img{
+          width: 2rem;
+          margin-right: 1rem;
+        }
+      }
+      .wahtsApp-button-contact:active{
+        box-shadow: 1px 1px 5px $secondaryColor;
+      }
+      .contact{
+        width: 100%;
+        @include flexCenter(center, column);
+        .error{
+          border-bottom: 5px solid #c52424;
+        }
+        .input, .textArea{
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: .5rem;
+          background-color: $primaryColor;
+          border: none;
+          border-radius: 5px;
+          border-bottom: 5px solid $secondaryColor;
+          outline: none;
+        }
+        .input:focus, .textArea:focus{
+          border-color: $highLightPurple;
+          box-shadow: 2px 5px 10px $secondaryColor;
+        }
+
+        .button-submit{
+          width: 100%;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          background-color: $green1;
+          color: $green2;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 1rem 0;
+          cursor: pointer;
+          box-shadow: 2px 5px 10px $secondaryColor;
+        }
+        .button-submit:active{
+          box-shadow: 1px 1px 5px $secondaryColor;
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 800px){
+  
+  .header{
+    .ul{
+      display: none;
+    }
+    .menu-mobile{
+      display: flex;
+      padding: .5rem 1rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: none;
+      gap: .5rem;
+      align-items: center;
+      border-radius: 5px;
+      background-color: $green1;
+      border: 3px solid $green1;
+      color: #ffff;
+    }
+    .menu-mobile:active{
+      border: 3px solid $green2;
+    }
+      
+    .menu-hamburguer::after, .menu-hamburguer::before {
+      width: 30px;
+      height: 3px;
+      background-color: currentColor;
+      content: '';
+      display: block;
+      margin-top: 6px;
+      transition: .3s;
+      position: relative;
+    }
+    
+    .menu-hamburguer{
+      display: block;
+      width: 30px;
+      border-top: 3px solid;
+    }
+    .nav{
+      justify-content: flex-end;
+      padding: .5rem;
+    }
+    
+    .nav.active{
+      .menu-mobile{
+        border: 3px solid $green2;
+      }
+      .menu-hamburguer{
+        border-top-color: transparent;
+      }
+      .menu-hamburguer::after{
+        transform: rotate(-135deg);
+        top: -8px;
+      }
+      .menu-hamburguer::before{
+        transform: rotate(135deg);
+      }
+      .ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        max-width: 80%;
+        // width: 50%;
+        top: 3.5rem;
+        border-radius: 5px;
+        padding: .5rem;
+        right: 10;
+        background-color: #ffff;
+        z-index: 100;
+        height: auto;
+        text-align: center;
+        box-shadow: 2px 2px 10px $secondaryColor;
+        li{
+          width: 100%;
+          margin-bottom: 1.1rem;
+          padding: 0;
+        }
+        .nacionalRanking, .login{
+          border-bottom: 3px solid $secondaryColor;
+          border-radius: 5px;
+        }
+        .nacionalRanking:hover, .login:hover, .nacionalRanking:active, .login:active{
+          border-bottom: 3px solid $highLightPurple;
+          background-color: $secondaryColor;
+          box-shadow: 2px 2px 10px $secondaryColor;
+        }
+        .search{
+          width: 100%;
+        }
+        .nacionalRanking a{
+          width: 100%;
+          display: block;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+    
+  .container-banner{
+    // padding-bottom: 0;
+    height: auto;
+    background-size: cover;
+    @include flexCenter(space-between, column);
+    .contactForm{
+      max-width: 90%;
+      width: 100%;
+      background-color: #056734;
+    }
+    .information{
+      width: 100%;
+      padding: 2rem;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}

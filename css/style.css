@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  width: 100%;
+  background-color: rgba(216, 15, 15, 0);
+  position: fixed;
+}
+
+.header .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .menu-mobile {
+  display: none;
+}
+
+.header .ul {
+  width: 100%;
+  padding: .3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.header .ul a {
+  color: #696bd3;
+}
+
+.header .search {
+  width: 40%;
+  padding: 0.2rem;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border: 2px solid #9a9a9a;
+  -webkit-box-shadow: 2px 2px 5px #9a9a9a;
+          box-shadow: 2px 2px 5px #9a9a9a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .search .search-input {
+  width: 70%;
+  border: none;
+  padding: .4rem 1rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.header .search .searchIcon-link {
+  display: block;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.header .nacionalRanking {
+  padding: .5rem;
+}
+
+.header .login .login-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: .5rem;
+}
+
+.container-banner {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../assets/img/reclame_banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-banner .information {
+  width: 30%;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-banner .information .title {
+  text-transform: uppercase;
+  color: #056734;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container-banner .contactForm {
+  max-width: 50%;
+  -webkit-box-shadow: 2px 5px 10px #9a9a9a;
+          box-shadow: 2px 5px 10px #9a9a9a;
+  border-radius: 5px;
+}
+
+.container-banner .contactForm .container-form {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.container-banner .contactForm .container-form .form-title {
+  color: #696bd3;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.container-banner .contactForm .container-form .wahtsApp-button-contact {
+  width: 80%;
+  padding: .5rem 1rem;
+  height: auto;
+  background-color: #6bcf72;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffff;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 2px 5px 10px #9a9a9a;
+          box-shadow: 2px 5px 10px #9a9a9a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-banner .contactForm .container-form .wahtsApp-button-contact img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.container-banner .contactForm .container-form .wahtsApp-button-contact:active {
+  -webkit-box-shadow: 1px 1px 5px #9a9a9a;
+          box-shadow: 1px 1px 5px #9a9a9a;
+}
+
+.container-banner .contactForm .container-form .contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-banner .contactForm .container-form .contact .error {
+  border-bottom: 5px solid #c52424;
+}
+
+.container-banner .contactForm .container-form .contact .input, .container-banner .contactForm .container-form .contact .textArea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 5px solid #9a9a9a;
+  outline: none;
+}
+
+.container-banner .contactForm .container-form .contact .input:focus, .container-banner .contactForm .container-form .contact .textArea:focus {
+  border-color: #696bd3;
+  -webkit-box-shadow: 2px 5px 10px #9a9a9a;
+          box-shadow: 2px 5px 10px #9a9a9a;
+}
+
+.container-banner .contactForm .container-form .contact .button-submit {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #94c11f;
+  color: #056734;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 5px 10px #9a9a9a;
+          box-shadow: 2px 5px 10px #9a9a9a;
+}
+
+.container-banner .contactForm .container-form .contact .button-submit:active {
+  -webkit-box-shadow: 1px 1px 5px #9a9a9a;
+          box-shadow: 1px 1px 5px #9a9a9a;
+}
+
+@media screen and (max-width: 800px) {
+  .header .ul {
+    display: none;
+  }
+  .header .menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    gap: .5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    background-color: #94c11f;
+    border: 3px solid #94c11f;
+    color: #ffff;
+  }
+  .header .menu-mobile:active {
+    border: 3px solid #056734;
+  }
+  .header .menu-hamburguer::after, .header .menu-hamburguer::before {
+    width: 30px;
+    height: 3px;
+    background-color: currentColor;
+    content: '';
+    display: block;
+    margin-top: 6px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: relative;
+  }
+  .header .menu-hamburguer {
+    display: block;
+    width: 30px;
+    border-top: 3px solid;
+  }
+  .header .nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: .5rem;
+  }
+  .header .nav.active .menu-mobile {
+    border: 3px solid #056734;
+  }
+  .header .nav.active .menu-hamburguer {
+    border-top-color: transparent;
+  }
+  .header .nav.active .menu-hamburguer::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    top: -8px;
+  }
+  .header .nav.active .menu-hamburguer::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .header .nav.active .ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    max-width: 80%;
+    top: 3.5rem;
+    border-radius: 5px;
+    padding: .5rem;
+    right: 10;
+    background-color: #ffff;
+    z-index: 100;
+    height: auto;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 10px #9a9a9a;
+            box-shadow: 2px 2px 10px #9a9a9a;
+  }
+  .header .nav.active .ul li {
+    width: 100%;
+    margin-bottom: 1.1rem;
+    padding: 0;
+  }
+  .header .nav.active .ul .nacionalRanking, .header .nav.active .ul .login {
+    border-bottom: 3px solid #9a9a9a;
+    border-radius: 5px;
+  }
+  .header .nav.active .ul .nacionalRanking:hover, .header .nav.active .ul .login:hover, .header .nav.active .ul .nacionalRanking:active, .header .nav.active .ul .login:active {
+    border-bottom: 3px solid #696bd3;
+    background-color: #9a9a9a;
+    -webkit-box-shadow: 2px 2px 10px #9a9a9a;
+            box-shadow: 2px 2px 10px #9a9a9a;
+  }
+  .header .nav.active .ul .search {
+    width: 100%;
+  }
+  .header .nav.active .ul .nacionalRanking a {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+  .container-banner {
+    height: auto;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-banner .contactForm {
+    max-width: 90%;
+    width: 100%;
+    background-color: #056734;
+  }
+  .container-banner .information {
+    width: 100%;
+    padding: 2rem;
+  }
+  .container-banner .information img {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
